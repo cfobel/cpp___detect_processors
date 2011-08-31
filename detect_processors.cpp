@@ -5,7 +5,7 @@
 using namespace std;
 
 int main(int argc, char *argv[]) {
-    ProcessorInfo pi(0);
+    ProcessorInfo pi;
 
     cout << " logical cpus: " << pi.get_logical() << endl;
     cout << "    cpu cores: " << pi.get_cores() << endl;

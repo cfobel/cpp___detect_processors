@@ -6,17 +6,15 @@ using namespace std;
 
 class ProcessorInfo {
 protected:
-    int cpu_id;
     bool hyper_threads;
     unsigned logical;
     unsigned cores;
 public:
-    int get_cpu_id() { return cpu_id; }
     bool get_hyper_threads() { return hyper_threads; }
     unsigned get_logical() { return logical; }
     unsigned get_cores() { return cores; }
 
-    ProcessorInfo(int cpu_id) : cpu_id(cpu_id) {
+    ProcessorInfo() {
         unsigned regs[4];
 
         // Get vendor
